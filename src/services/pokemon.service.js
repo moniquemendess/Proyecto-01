@@ -8,11 +8,3 @@ export const getByIdPokemon = async (id) => {
 
   return await axiosUtil(optionsRequest);
 };
-​
-
-
-const optionsRequest = {
-    method: "GET",
-    url: `https://pokeapi.co/api/v2/pokemon/${id}`,
-  };
-  

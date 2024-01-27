@@ -1,4 +1,4 @@
-import { initControler } from "../../utils";
+import { getInfo, initControler } from "../../utils";
 import "./Dashboard.css";
 
 const template = () => `
@@ -48,11 +48,11 @@ const addEventListeners = () => {
 export const printTemplateDashboard = () => {
   /** Como siempre las paginas se renderizan en el main por lo cual inyectamos el template en el contenedor del main */
   document.querySelector("main").innerHTML = template();
-  console.log("entro");
 
   /** Para la nav, que la habiamos ocultado en el login, la volvemos a renderizar cambiandole el display de none a flex */
   document.querySelector("nav").style.display = "flex";
 
   /** metemos los escuchadores de la pagina */
   addEventListeners();
+  getInfo();
 };
