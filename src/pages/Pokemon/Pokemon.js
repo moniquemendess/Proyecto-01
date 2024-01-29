@@ -5,6 +5,7 @@ import {
   PrintButton,
   PrintSpinner,
 } from "../../componentes";
+
 import { getData } from "../../global/state/globalstate";
 import { Paginacion, filterPokemon } from "../../utils";
 import "./Pokemon.css";

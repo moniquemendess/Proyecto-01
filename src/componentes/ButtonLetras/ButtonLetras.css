@@ -1,0 +1,31 @@
+#palavra_a_advinar {
+  height: auto;
+}
+
+#palavra_a_advinar span {
+  vertical-align: bottom; /* para los caracteres estaren en la misma linea*/
+  font-size: 2em;
+  border-bottom: 2px solid black;
+  width: 30px; /* la anchura de cada caracteres*/
+  text-align: center;
+  margin-right: 6px;
+  display: inline-block;
+}
+
+#letras {
+  margin-top: 30px;
+  display: flex; /* el teclado las letras una del lado de la otra */
+  flex-wrap: wrap; /* hace que al final del contenedor bajo las letras haciendo el corte para proxima linea*/
+  gap: 6px; /* espacio entre las letras del teclado*/
+}
+
+#letras button {
+  width: 28px;
+  padding: 6px 0;
+  text-align: center;
+}
+
+#resultado {
+  color: black;
+  font-weight: 700;
+}

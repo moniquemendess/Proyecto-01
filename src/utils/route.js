@@ -1,6 +1,11 @@
 // route.js ---> utils/route.js
 import { getUser } from "../global/state/globalstate";
-import { Login, PrintPokemonPage, printTemplateDashboard } from "../pages";
+import {
+  Login,
+  PrintAhorcado,
+  PrintPokemonPage,
+  printTemplateDashboard,
+} from "../pages";
 
 export const initControler = (pagesRender) => {
   console.log("user", localStorage.getItem(getUser().name));
@@ -22,8 +27,8 @@ export const initControler = (pagesRender) => {
     case "Login":
       Login();
       break;
-    case "Memory":
-      "Memory()";
+    case "ahorcado":
+      PrintAhorcado();
       break;
   }
 };
