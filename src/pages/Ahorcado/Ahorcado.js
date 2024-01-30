@@ -10,7 +10,10 @@ const templateAhorcado = () => `
 
      <p id= "palavra_a_advinar"></p>
 
-     <button id= "jugar">Obtener palavra</button>
+     <button id= "jugar"> JUGAR </button>
+
+      <button id= "consejo">Consejo: es un País \uD83C\uDF0E</button>
+
 
       <p id="resultado"></p>
 

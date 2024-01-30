@@ -24,11 +24,11 @@
     width: 300px;
     height: 40px;
     margin: 20px;
-    background-color: #0def03;
+    background-color: #ca7ec0;
     border: none;
     border-radius: 5px;
     font-size: 16px;
-    -webkit-box-shadow: 0px 4px 10px -3px rgba(0, 0, 0, 0.61);
+    -webkit-box-shadow: 0px 4px 10px -3px rgba(128, 76, 76, 0.61);
     -moz-box-shadow: 0px 4px 10px -3px rgba(0, 0, 0, 0.61);
     box-shadow: 0px 4px 10px -3px rgba(0, 0, 0, 0.61);
 

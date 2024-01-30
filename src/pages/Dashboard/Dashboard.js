@@ -25,8 +25,8 @@ const template = () => `
       <li>
         <figure id= "navigatePagina">
           <img
-            src="https://res.cloudinary.com/dq186ej4c/image/upload/v1689761735/6168776_kfna36.png"
-            alt="go to memory game"
+            src="https://media.discordapp.net/attachments/1201292840450404382/1201810445002866818/verdugo-removebg-preview.png?ex=65cb2c32&is=65b8b732&hm=94a4cb3e47d8145d4b5dd1406949e556a1f3767e6c0bd61e08697846fa63b1bb&=&format=webp&quality=lossless&width=416&height=416"
+            alt=" go to ahorcado game"
           />
           <h2>AHORCADO MONA</h2>
         </figure>

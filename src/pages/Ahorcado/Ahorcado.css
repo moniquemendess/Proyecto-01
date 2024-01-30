@@ -10,3 +10,20 @@
   margin-right: 6px;
   display: inline-block;
 }
+
+#jugar {
+  text-wrap: wrap;
+  color: rgb(6, 20, 6);
+  font-weight: 700;
+  background: rgb(233, 153, 216);
+}
+
+#consejo {
+  font-weight: 700;
+  background: rgb(233, 153, 216);
+}
+
+#letras button {
+  background: rgb(233, 153, 216);
+  color: black;
+}
