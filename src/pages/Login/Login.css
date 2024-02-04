@@ -11,6 +11,9 @@
   & #titleLogin {
     margin: 2rem;
     font-size: 4em;
+    color: #ca7ec0;
+    text-align: center;
+    font-family: cursive;
   }
 
   & input {
@@ -18,13 +21,15 @@
     height: 40px;
     border-radius: 5px;
     padding: 10px;
+    margin: 10px 0;
   }
 
   & button {
     width: 300px;
     height: 40px;
-    margin: 20px;
+    margin: 20px 0;
     background-color: #ca7ec0;
+    cursor: pointer;
     border: none;
     border-radius: 5px;
     font-size: 16px;

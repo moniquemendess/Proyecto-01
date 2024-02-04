@@ -1,12 +1,13 @@
 #palavra_a_advinar {
   height: auto;
+  text-align: center;
 }
 
 #palavra_a_advinar span {
-  vertical-align: bottom; /* para los caracteres estaren en la misma linea*/
-  font-size: 2em;
+  vertical-align: bottom;
+  font-size: 25px;
   border-bottom: 2px solid black;
-  width: 30px; /* la anchura de cada caracteres*/
+  width: 30px;
   text-align: center;
   margin-right: 6px;
   display: inline-block;
@@ -14,18 +15,67 @@
 
 #letras {
   margin-top: 30px;
-  display: flex; /* el teclado las letras una del lado de la otra */
-  flex-wrap: wrap; /* hace que al final del contenedor bajo las letras haciendo el corte para proxima linea*/
-  gap: 6px; /* espacio entre las letras del teclado*/
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
 }
 
 #letras button {
-  width: 28px;
+  width: 20px;
   padding: 6px 0;
   text-align: center;
+  display: inline-block;
+  align-items: center;
+  cursor: pointer;
 }
 
 #resultado {
   color: black;
   font-weight: 700;
+  text-align: center;
+  font-size: 15px;
+}
+
+#imagen {
+  width: 200px;
+}
+
+#jugar {
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+/* Responsive para móviles / tablets */
+@media (min-width: 320px) and (max-width: 479px) {
+  #letras {
+    flex-direction: row;
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-bottom: 10px;
+    margin-right: 15px;
+    gap: 9px;
+    font-size: 40px;
+  }
+
+  @media (min-width: 320px) and (max-width: 479px) {
+    #letras button {
+      width: 28px;
+      padding: 8px;
+      text-align: center;
+      display: inline-block;
+    }
+  }
+  @media (min-width: 320px) and (max-width: 479px) {
+    #jugar {
+      margin-left: 15px;
+      text-align: center;
+    }
+
+    #imagen {
+      width: 130px;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
 }

@@ -21,13 +21,13 @@ export const iniciar = (event) => {
   const imagen = id("imagen");
   imagen.src = "img/img0.png";
   const btn = id("jugar");
-  btn.disabled = true;
-  setcantErrores(0);
-  setcantAciertos(0);
+  btn.disabled = true; // cuando inicia desabilita el button
+  setcantErrores(0); // en data las variables globais
+  setcantAciertos(0); // en data las variables globais
 
   const parrafo = id("palavra_a_advinar");
   console.log(parrafo);
-  parrafo.innerHTML = "";
+  parrafo.innerHTML = ""; // vacio
 
   const cant_palabras = palabrasPaises.length;
   const valor_al_azar = obtener_random(0, cant_palabras);
@@ -35,9 +35,10 @@ export const iniciar = (event) => {
 
   const cant_letras = getInfoAhorcado().palabraAdivinar.length;
 
-  const btn_letras = document.querySelectorAll("#letras button");
+  const btn_letras = document.querySelectorAll("#letras button"); // seleciona todos los button de id letras
+
   for (let i = 0; i < btn_letras.length; i++) {
-    btn_letras[i].disabled = false;
+    btn_letras[i].disabled = false; // para que cada button sea habilitadas
   }
 
   for (let i = 0; i < cant_letras; i++) {
@@ -52,7 +53,7 @@ export const click_letras = (event) => {
   button.disabled = true;
 
   const letra = button.innerHTML.toUpperCase();
-  const palabra = getInfoAhorcado().palabraAdivinar.toUpperCase();
+  const palabra = getInfoAhorcado().palabraAdivinar.toUpperCase(); // hace que la palvra todos en maiscula
 
   let correto = false;
 
@@ -68,6 +69,7 @@ export const click_letras = (event) => {
   }
 
   if (correto == false) {
+    // cuando el jogador no acierta cambia la cuantidad errores
     let errores = parseInt(getInfoAhorcado().cantErrores);
     setcantErrores(getInfoAhorcado().cantErrores + 1);
     console.log("errores", getInfoAhorcado().cantErrores);
@@ -79,6 +81,7 @@ export const click_letras = (event) => {
   console.log(getInfoAhorcado().palabraAdivinar.length);
 
   if (getInfoAhorcado().cantErrores == 7) {
+    // nos traiga el resultado  + informacion
     id("resultado").innerHTML =
       "Perdiste \uD83D\uDE2D, la palabra era " +
       getInfoAhorcado().palabraAdivinar +
@@ -104,4 +107,4 @@ export const game_over = () => {
   }
   const btn = id("jugar");
   btn.disabled = false;
-};
+}; // 01 incio // prepara la pagina para empezar el juego, corre el button

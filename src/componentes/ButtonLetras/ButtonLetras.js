@@ -1,7 +1,7 @@
 import { click_letras } from "../../utils";
 import "./ButtonLetras.css";
 
-/* hacer una constante para enviar al html */
+/* hacer una constante template para enviar al html */
 const templateLetras = `
     <button>a</button>
     <button>b</button>

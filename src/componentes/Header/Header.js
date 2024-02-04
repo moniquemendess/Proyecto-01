@@ -5,23 +5,23 @@ import "./Header.css";
 
 const template = () => `
 <img
-  src="https://res.cloudinary.com/dq186ej4c/image/upload/v1682679162/header_giqdug.jpg"
+  src="/img/mona-removebg-preview.png"
   alt="title hub game website (app)"
   class="logo"
 />
 <nav>
   <img
-    src="https://res.cloudinary.com/dq186ej4c/image/upload/v1682684561/changeColor_tat29q.png"
+    src="https://cdn-icons-png.flaticon.com/256/2071/2071669.png"
     alt=" change to style mode page"
     id="changeColor"
   />
   <img
-    src="https://res.cloudinary.com/dq186ej4c/image/upload/v1682685633/home_nekvs0.png"
+    src="https://cdn-icons-png.flaticon.com/256/4562/4562862.png"
     alt=" navigate to home app"
     id="buttonDashboard"
   />
   <img
-    src="https://res.cloudinary.com/dq186ej4c/image/upload/v1682679055/logout_arz0gw.png"
+    src="https://cdn-icons-png.flaticon.com/256/8914/8914308.png"
     alt="logout"
     id="buttonLogout"
   />

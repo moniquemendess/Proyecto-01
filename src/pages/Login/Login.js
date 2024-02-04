@@ -1,4 +1,4 @@
-import { setUser, setUserData } from "../../global/state/globalState";
+import { setUser, setUserData } from "../../global/state/globalstate";
 import { initControler } from "../../utils/route";
 import "./Login.css";
 
@@ -6,9 +6,9 @@ import "./Login.css";
 
 const template = () => `
   <div id="containerLogin">
-    <h1 id="titleLogin">LOGIN</h1>
+    <h1 id="titleLogin">Welcome</h1>
     <input type="text" name="username" id="username" />
-    <button id="buttonLogin">enviar</button>
+    <button id="buttonLogin">Enviar</button>
   </div>
 `;
 

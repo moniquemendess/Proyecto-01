@@ -3,7 +3,7 @@ import { id, iniciar, game_over } from "../../utils";
 import "./Ahorcado.css";
 
 const templateAhorcado = () => `
-
+<div>
 <img id= "imagen" src="img/img0.png" alt="ahorcado"/>
 
 <div>
@@ -12,15 +12,12 @@ const templateAhorcado = () => `
 
      <button id= "jugar"> JUGAR </button>
 
-      <button id= "consejo">Consejo: es un País \uD83C\uDF0E</button>
-
-
-      <p id="resultado"></p>
+            <p id="resultado"></p>
 
     <div id="letras"></div>
 
 </div>
-    
+</div>
 `;
 // haciendo una const con id jugar con el evento click, llama la function iniciar
 const listeners = () => {
